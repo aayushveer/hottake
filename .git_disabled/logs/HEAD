@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 14c6cfd320fc9504397fd4a22178a19aacae75bc Aayush Veer <aayushveer@liklot.com> 1779827578 +0530	commit (initial): Initial commit for hottake
+14c6cfd320fc9504397fd4a22178a19aacae75bc 0000000000000000000000000000000000000000 Aayush Veer <aayushveer@liklot.com> 1779827582 +0530	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 14c6cfd320fc9504397fd4a22178a19aacae75bc Aayush Veer <aayushveer@liklot.com> 1779827582 +0530	Branch: renamed refs/heads/master to refs/heads/main
+14c6cfd320fc9504397fd4a22178a19aacae75bc 246d9c09d1b4844b63f97b062e2f282a40244253 Aayush Veer <aayushveer@liklot.com> 1779994189 +0530	commit: Add gitignore for node_modules and dist
+246d9c09d1b4844b63f97b062e2f282a40244253 efa973ed0bb05321eb7d82e4e99f631ea68501bf Aayush Veer <aayushveer@liklot.com> 1779996304 +0530	commit: fix: share card screenshot layout by removing explicit width and height
+efa973ed0bb05321eb7d82e4e99f631ea68501bf a7f49ff5ced805f90ce74af6c73063ac67215822 Aayush Veer <aayushveer@liklot.com> 1779996872 +0530	commit: fix: restrict html2canvas capture bounds strictly to card element dimensions
+a7f49ff5ced805f90ce74af6c73063ac67215822 a7d9f117f22303c355aee55bf9c6b3e9156a59f4 Aayush Veer <aayushveer@liklot.com> 1779997113 +0530	commit: design: premium share card with enhanced gradients, shadows, and typography
