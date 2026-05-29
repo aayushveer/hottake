@@ -171,28 +171,52 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
         <div class="share-card-wrapper">
           <div class="share-card" id="shareCard">
             <div class="card-header">
-              <div class="card-logo">🔥 HotTake</div>
+              <div class="card-logo-wrap">
+                <div class="card-logo-icon">🔥</div>
+                <div class="card-logo-text">HotTake</div>
+              </div>
               <div class="card-tag">OPINION ARENA</div>
             </div>
+
+            <div class="card-divider"></div>
+
+            <div class="card-category">${r.category}</div>
+
             <p class="card-question">"${r.text}"</p>
+
             <div class="card-choices">
-              <div class="card-choice ${i===`A`?`active`:``}">
+              <div class="card-choice ${i===`A`?`active`:``} ${r.votesA>r.votesB?`winner`:``}">
                 <div class="card-choice-label">${r.optionA}</div>
                 <div class="card-choice-pct">${a}%</div>
+                <div class="card-choice-bar">
+                  <div class="card-choice-bar-fill option-a-bar" style="width: ${a}%"></div>
+                </div>
               </div>
               <div class="card-vs">VS</div>
-              <div class="card-choice ${i===`B`?`active`:``}">
+              <div class="card-choice ${i===`B`?`active`:``} ${r.votesB>r.votesA?`winner`:``}">
                 <div class="card-choice-label">${r.optionB}</div>
                 <div class="card-choice-pct">${o}%</div>
+                <div class="card-choice-bar">
+                  <div class="card-choice-bar-fill option-b-bar" style="width: ${o}%"></div>
+                </div>
               </div>
             </div>
-            <div class="card-score">
-              <span class="card-score-icon">🔥</span>
-              <span>My Hot Score: <strong>${_}</strong></span>
+
+            <div class="card-your-pick ${i===`A`?`option-a`:`option-b`}">
+              My Pick: <strong>${i===`A`?r.optionA:r.optionB}</strong>
             </div>
+
+            <div class="card-score">
+              <div class="card-score-left">
+                <span class="card-score-icon">🔥</span>
+                <div class="card-score-text">My Hot Score</div>
+              </div>
+              <div class="card-score-value">${_}</div>
+            </div>
+
             <div class="card-footer">
-              <span>Think I'm wrong? Take the test 👇</span>
-              <span class="card-url">hottake.in</span>
+              <div class="card-footer-text">Think I'm wrong? Take the test 👇</div>
+              <div class="card-url">hottake.in</div>
             </div>
           </div>
         </div>
@@ -214,7 +238,7 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
         </button>
       </div>
     </div>
-  `)}async function _e(){let{default:e}=await f(async()=>{let{default:e}=await import(`./html2canvas-CqQof0Ao.js`).then(e=>c(e.default,1));return{default:e}},[],import.meta.url),t=document.getElementById(`shareCard`);if(t)try{let n=await e(t,{scale:3,backgroundColor:`#0a0a0f`,useCORS:!0,logging:!1,width:t.offsetWidth,height:t.offsetHeight}),r=document.createElement(`a`);r.download=`hottake-${Date.now()}.png`,r.href=n.toDataURL(`image/png`),r.click()}catch{Q(),alert(`Screenshot saved! You can also screenshot the card above manually.`)}}function ve(){let e=g;if(!e)return;let t=`🔥 I just took a stance on HotTake: "${e.text}" — My Hot Score is ${_}! Think I'm wrong? Take the test 👇\nhottake.in`,n=`https://wa.me/?text=${encodeURIComponent(t)}`;window.open(n,`_blank`)}function Q(e){if(!g)return;let t=`🔥 I just took a stance on "${g.text}" — My Hot Score is ${_}! Take the test: hottake.in`;navigator.clipboard.writeText(t).then(()=>{let t=e?.currentTarget||e?.target;if(!t)return;let n=t.textContent;t.textContent=`✅ Copied!`,setTimeout(()=>t.textContent=n,2e3)})}function $(){let e=C.filter(e=>A(e.id));G(`
+  `)}async function _e(){let{default:e}=await f(async()=>{let{default:e}=await import(`./html2canvas-BUQfcHpY.js`).then(e=>c(e.default,1));return{default:e}},[],import.meta.url),t=document.getElementById(`shareCard`);if(t)try{let n=await e(t,{scale:3,backgroundColor:`#0a0a0f`,useCORS:!0,logging:!1,width:t.offsetWidth,height:t.offsetHeight}),r=document.createElement(`a`);r.download=`hottake-${Date.now()}.png`,r.href=n.toDataURL(`image/png`),r.click()}catch{Q(),alert(`Screenshot saved! You can also screenshot the card above manually.`)}}function ve(){let e=g;if(!e)return;let t=`🔥 I just took a stance on HotTake: "${e.text}" — My Hot Score is ${_}! Think I'm wrong? Take the test 👇\nhottake.in`,n=`https://wa.me/?text=${encodeURIComponent(t)}`;window.open(n,`_blank`)}function Q(e){if(!g)return;let t=`🔥 I just took a stance on "${g.text}" — My Hot Score is ${_}! Take the test: hottake.in`;navigator.clipboard.writeText(t).then(()=>{let t=e?.currentTarget||e?.target;if(!t)return;let n=t.textContent;t.textContent=`✅ Copied!`,setTimeout(()=>t.textContent=n,2e3)})}function $(){let e=C.filter(e=>A(e.id));G(`
     <div class="profile-screen">
       <div class="profile-header">
         <button class="btn-back" onclick="showHome()">← Back</button>
