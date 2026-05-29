@@ -7,12 +7,13 @@
 // ─── FIREBASE CONFIG ───────────────────────────────────────────────────────────
 // Replace with your Firebase config from console.firebase.google.com
 const FIREBASE_CONFIG = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyD0pU2V_YqF_tvm-Ue0CzLvWRzqsBxllu4",
+  authDomain: "ttake-7df3d.firebaseapp.com",
+  projectId: "ttake-7df3d",
+  storageBucket: "ttake-7df3d.firebasestorage.app",
+  messagingSenderId: "998743235226",
+  appId: "1:998743235226:web:1fa935a4691cf7b2735d23",
+  measurementId: "G-5TDLW30S29"
 };
 
 // ─── SEED TOPICS ──────────────────────────────────────────────────────────────
